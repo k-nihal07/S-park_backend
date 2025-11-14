@@ -1,6 +1,6 @@
 require('dotenv').config();
 const mongoose = require('mongoose');
-const ParkingSlot = require('./models/parkingSlotModel');
+const ParkingSlot = require('./parkingSlotModel.js');
 
 // --- DEBUGGING LINE ---
 // This will print the database URI to the console.
@@ -48,4 +48,5 @@ const seedDB = async () => {
 };
 
 // Run the seeder function
+
 seedDB();
