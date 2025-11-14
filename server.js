@@ -30,7 +30,7 @@ io.on('connection', (socket) => {
   });
 });
 
-const apiRoutes = require('./routes/api');
+const apiRoutes = require('./api.js');
 app.use('/api', apiRoutes);
 
 mongoose.connect(process.env.MONGO_URI)
