@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const User = require('../models/userModel');
-const ParkingSlot = require('../models/parkingSlotModel');
+const User = require('../userModel.js');
+const ParkingSlot = require('../parkingSlotModel.js');
 const bcrypt = require('bcryptjs');
 
 // --- User Routes (These are correct) ---
@@ -118,4 +118,5 @@ router.post('/sensor/update', async (req, res) => {
 });
 
 module.exports = router;
+
 
